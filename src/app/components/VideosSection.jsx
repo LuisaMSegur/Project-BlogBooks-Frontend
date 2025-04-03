@@ -1,7 +1,7 @@
 export default function VideosSection() {
     return (
-      <section className="h-screen">
-        <h2 className="text-5xl font-bold text-center text-[#690B22] pt-[100px] pb-[80px]">Videos Recomendados</h2>
+      <section id="recomendaciones" className="h-screen">
+        <h2 className="text-7xl font-bold text-center text-[#690B22] pt-[80px] pb-[90px]">Videos Recomendados</h2>
         
         <div className="grid grid-cols-2 gap-8 px-10">
           <div className="aspect-video">

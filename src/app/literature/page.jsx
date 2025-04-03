@@ -1,4 +1,6 @@
+"use client";
 import Nav from "@/app/components/Nav";
+import ButtonHome from "@/app/components/ButtonHome";
 import Header from "@/app/components/Header";
 import MainContent from "@/app/components/MainContent";
 import Footer from "@/app/components/Footer";
@@ -6,7 +8,8 @@ import Footer from "@/app/components/Footer";
 export default function LiteraturePage() {
   return (
     <div className="font-[merienda] flex flex-col min-h-screen bg-[#E07A5F]">
-      <Nav logo={"/images/VAgifVerde.gif"} buttonColor={{ backgroundColor: "#002c22", ring: "ring-[#1B4D3E]/70" }}/>
+      <Nav logo={"/images/VAgifVerde.gif"} buttonColor= "bg-[#002c22] hover:bg-[#E07A5F] ring-[#1B4D3E]/70" />
+      <ButtonHome color="bg-[#E3927C] hover:bg-[#E07A5F] ring-[#1B4D3E]/70"  />
       <Header textColor={"text-[#002c22]"} title="LITERATURA" subtitle="Mis libros y películas favoritas. Unete a nuestro club de lectura, danos a conocer tu opinión mediante reseñas y mucho mas" bgImage="/images/libritos.jpg"/>
       <MainContent 
       sectionAbout={{
@@ -33,7 +36,7 @@ export default function LiteraturePage() {
           imgSrc: "/images/clubImagen.png",
           title: "Club de Lectura",
           subtitle: "Mis libros y películas favoritas. Unete a nuestro club de lectura, danos a conocer tu opinión mediante reseñas y mucho mas.Conectate con nosotros todas las semanas",
-          text: "Cada jueves 19:30hs - 21:30hs (hora Colombia)",
+          text: "Jueves 19:30hs - 21:30hs (hora Colombia)",
           link: "Conexión por zoom, haz click --->",
           icon: "/images/icons8-zoom-100.png",
         }
@@ -41,7 +44,7 @@ export default function LiteraturePage() {
       sectionRecomendation={{
         textColor: "text-[#002c22]",
         title: "Recomendaciones",
-        imgOne: "/images/cienAñosdeSoledad.jpeg",
+        imgOne: "/images/cienSoledad.jpeg",
         imgTwo: "/images/beloved.png",
         imgThree: "/images/elInfinitoEnUnJunco.webp",
       }}
