@@ -10,6 +10,8 @@ Aquí encontrarás reseñas y recomendaciones sobre libros, ideales para los ama
 
 Videos sobre inspiración, emprendimiento, recomendaciones y masterclasses, diseñados para ayudarte a crecer y mejorar tanto personal como profesionalmente.
 
+![alt text](<public/images/Captura de pantalla 2025-04-10 181227.png>)
+
 ![alt text](<public/images/Captura de pantalla 2025-04-10 181408.png>)
 
 
