@@ -1,5 +1,6 @@
 import { Merienda, Kdam_Thmor_Pro } from "next/font/google";
 import "./globals.css";
+import Preloader from "./components/Preloader";
 
 const merienda = Merienda({
   subsets: ["latin"],
@@ -22,10 +23,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${merienda} && ${kdam} antialiased`}
-      >
-        {children}
+      <body className={`${merienda.className} ${kdam.className} antialiased`}>
+        <Preloader>{children}</Preloader>
       </body>
     </html>
   );
