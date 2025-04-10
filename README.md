@@ -2,18 +2,17 @@
 
 Este proyecto es el frontend de un sitio dedicado a la literatura y la motivación, con dos secciones principales:
 
-### _Literatura:_ 
+### _Literatura:_
 
 Aquí encontrarás reseñas y recomendaciones sobre libros, ideales para los amantes de la lectura y quienes buscan nuevas aventuras literarias.
 
-### _Motivación:_ 
+### _Motivación:_
 
 Videos sobre inspiración, emprendimiento, recomendaciones y masterclasses, diseñados para ayudarte a crecer y mejorar tanto personal como profesionalmente.
 
-![alt text](<public/images/Captura de pantalla 2025-04-10 181227.png>)
+![alt text](<public/images/Captura de pantalla 2025-04-10 181241.png>)
 
 ![alt text](<public/images/Captura de pantalla 2025-04-10 181408.png>)
-
 
 ## Tecnologías Utilizadas
 
@@ -47,6 +46,6 @@ una para solicitar el blog del usuario particular y otra para solicitar cada pos
 3. Instala dependencias: npm install
 4. Ejecuta el servidor en desarrollo: npm run dev
 
+# Enlace en GitHub Pages:
 
-# Enlace en GitHub Pages: 
-
+https://luisamsegur.github.io/Project-BlogBooks-Frontend/
