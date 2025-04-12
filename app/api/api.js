@@ -1,6 +1,6 @@
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
-const BLOG_ID = process.env.NEXT_PUBLIC_BLOG_ID;
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const BLOG_ID = process.env.BLOGGER_BLOG_ID;
+const API_KEY = process.env.BLOGGER_API_KEY;
 
 export async function getBlogById() {
   try {
