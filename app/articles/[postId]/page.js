@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { getPostById, getBlogById } from "../../api/api";
 import DOMPurify from "dompurify";
 import { use } from "react";
 import Preloader from "@/app/components/Preloader";
@@ -16,20 +15,18 @@ export default function ArticlePage({ params }) {
 
   useEffect(() => {
     if (postId) {
-      getPostById(postId)
+      fetch(`/api/posts/${postId}`)
+        .then((res) => res.json())
         .then((data) => setPost(data))
         .catch((error) => console.error("Error al obtener el post:", error));
     }
   }, [postId]);
 
   useEffect(() => {
-    getBlogById()
-      .then((data) => {
-        setListPosts(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching blog posts:", error);
-      });
+    fetch("/api/posts")
+      .then((res) => res.json())
+      .then((data) => setListPosts(data))
+      .catch((error) => console.error("Error fetching blog posts:", error));
   }, []);
 
   if (!post) {
