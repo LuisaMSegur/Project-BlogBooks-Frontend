@@ -4,14 +4,15 @@ const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 export async function getBlogById() {
   try {
-    
     const response = await fetch(`${API_URL}/${BLOG_ID}/posts?key=${API_KEY}`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     });
 
     if (!response.ok) {
-      throw new Error(`Error en la respuesta de la API: ${response.statusText}`);
+      throw new Error(
+        `Error en la respuesta de la API: ${response.statusText}`
+      );
     }
 
     const data = await response.json();
@@ -19,8 +20,6 @@ export async function getBlogById() {
     if (!data.items) {
       throw new Error("No se encontraron posts en la respuesta de la API.");
     }
-
-    console.log("Data de los posts del blog:", data);
 
     return data.items;
   } catch (err) {
@@ -31,23 +30,24 @@ export async function getBlogById() {
 
 export async function getPostById(postId) {
   try {
-    const response = await fetch(`${API_URL}/${BLOG_ID}/posts/${postId}?key=${API_KEY}`, {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    });
+    const response = await fetch(
+      `${API_URL}/${BLOG_ID}/posts/${postId}?key=${API_KEY}`,
+      {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      }
+    );
 
     if (!response.ok) {
-      throw new Error(`Error en la respuesta de la API: ${response.statusText}`);
+      throw new Error(
+        `Error en la respuesta de la API: ${response.statusText}`
+      );
     }
 
     const data = await response.json();
     return data;
-
   } catch (err) {
     console.error("Error al obtener el post:", err);
     throw new Error("Fallo en el fetch del post: " + err.message);
   }
 }
-
-
-  

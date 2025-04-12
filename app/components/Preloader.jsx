@@ -23,6 +23,7 @@ const Preloader = ({ children }) => {
               width={200} 
               height={200} 
               className="rounded-lg drop-shadow-md"
+              priority
             />
           </div>
         </div>

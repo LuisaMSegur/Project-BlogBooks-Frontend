@@ -1,6 +1,6 @@
 import { Merienda, Kdam_Thmor_Pro } from "next/font/google";
 import "./globals.css";
-import Preloader from "./components/Preloader";
+import Preloader from '@/app/components/Preloader';
 
 const merienda = Merienda({
   subsets: ["latin"],

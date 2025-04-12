@@ -6,7 +6,7 @@ import MainContent from "@/app/components/MainContent";
 import Footer from "@/app/components/Footer";
 import { getBlogById } from "@/app/api/api";
 import { useEffect, useState } from "react";
-import Preloader from "../components/Preloader";
+import Preloader from '@/app/components/Preloader';
 
 export default function LiteraturePage() {
 const [listPosts, setListPosts] = useState([]);

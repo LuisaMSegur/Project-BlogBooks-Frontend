@@ -7,6 +7,7 @@ import DOMPurify from "dompurify";
 import { use } from "react";
 import Preloader from "@/app/components/Preloader";
 
+
 export default function ArticlePage({ params }) {
   const { postId } = use(params);
   const [post, setPost] = useState(null);
